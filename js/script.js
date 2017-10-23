@@ -101,20 +101,25 @@ jQuery(document).ready(function($) {
 
 /*------------------КОНЕЦ jQuery------------------*/
 });
-// function slide_to_slide() {
-// 	var slider_f = document.querySelector('.slider');
-// 	if (slider_f.style.display == "none") {
-// 		slider_f.style.display = "block";
-// 		console.log('lol');
-// 	} else{
-// 		slider_f.style.display = "none";
-// 		console.log('kek');
-// 	}
-// }
-// var call_slider = document.querySelectorAll(".gallerybtn");
-// for (var i = 0; i < call_slider.length; i++) {
-// 	call_slider[i].addEventListener('click', slide_to_slide);	
-// }
+var call_slider = document.querySelectorAll(".gallerybtn");
+
+for (var i = 0; i < call_slider.length; i++) {
+	call_slider[i].addEventListener('click', function () {
+
+	var slider_f = document.querySelector('.slider');
+	slider_f.style.display = "block";
+	console.log('lol');
+
+});	
+}
+
+var close_slider =  document.querySelector('.close-slider');
+
+close_slider.addEventListener('click', function () {
+	var slider_f = document.querySelector('.slider');
+	slider_f.style.display = "none";
+	console.log('kek');
+})
 
 
 
