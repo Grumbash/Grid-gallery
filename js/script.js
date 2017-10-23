@@ -99,27 +99,29 @@ jQuery(document).ready(function($) {
 		$(this).css('display', 'none');
 	});
 
-/*------------------КОНЕЦ jQuery------------------*/
 });
+/*---------------------END OF jQuery--------------------*/
+
+
+/*------------------VANILLA JAVASCRIPT------------------*/
 var call_slider = document.querySelectorAll(".gallerybtn");
 
 for (var i = 0; i < call_slider.length; i++) {
 	call_slider[i].addEventListener('click', function () {
 
-	var slider_f = document.querySelector('.slider');
-	slider_f.style.display = "block";
-	console.log('lol');
-
-});	
+		var slider_f = document.querySelector('.slider');
+		slider_f.style.display = "block";
+	});	
 }
 
 var close_slider =  document.querySelector('.close-slider');
 
 close_slider.addEventListener('click', function () {
+
 	var slider_f = document.querySelector('.slider');
 	slider_f.style.display = "none";
-	console.log('kek');
-})
+	
+});
 
 
 
