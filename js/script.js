@@ -117,7 +117,6 @@ for (var i = 0; i < call_slider.length; i++) {
 var close_slider =  document.querySelector('.close-slider');
 
 close_slider.addEventListener('click', function () {
-
 	var slider_f = document.querySelector('.slider');
 	slider_f.style.display = "none";
 	
